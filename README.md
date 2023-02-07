@@ -93,6 +93,8 @@ public class AfterThrowingDemoApp {
 	}
 }
 ```
+![image](https://user-images.githubusercontent.com/101872264/217273584-99c03114-97d8-47bb-b17e-38d4769042b4.png)
+
 
 >## 結論：
 > AOP的AfterThrowing處理雖然可以對目標方法的異常進行處理，但這種處理與直接使用catch捕捉不同，catch捕捉意味著完全處理該異常，如果catch塊中沒有重新拋出新的異常，則該方法可能正常結束；而AfterThrowing處理雖然處理了該異常，但它不能完全處理異常，該異常依然會傳播到上一級調用者，即JVM。
